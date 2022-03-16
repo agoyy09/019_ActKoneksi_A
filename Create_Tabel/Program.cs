@@ -15,7 +15,7 @@ namespace Create_Tabel
             SqlConnection con = null;
             try
             {
-                con = new SqlConnection("data source=prayogasaputra1;database=ProdiTI;Intergrated Security = TRUE");
+                con = new SqlConnection("data source=prayogasaputra1;database=ProdiTI;Integrated Security = TRUE");
                 con.Open();
 
                 SqlCommand cm = new SqlCommand("create table Mahasiswa_coba (NIM char(12) not null primary key,Nama varchar(50), Alamat varchar(255), Jenis_kelamin char(1))", con);
